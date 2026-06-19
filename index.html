@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroTech - Inovação no Campo</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Ícones externos para o design -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body>
+
+    <!-- 1. PARTE INICIAL (HERO SECTION) -->
+    <header class="hero">
+        <nav class="navbar">
+            <div class="logo"><i class="fa-solid fa-leaf"></i> AgroTech</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#solucoes">Soluções</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content" id="inicio">
+            <h1>O Futuro do Agronegócio é Inteligente</h1>
+            <p>Conectando tecnologia de ponta com a tradição do campo para maximizar sua colheita.</p>
+            <a href="#solucoes" class="btn-main">Conhecer Soluções</a>
+        </div>
+    </header>
+
+    <!-- 2. PARTE DE CARDS (SOLUÇÕES) -->
+    <section class="cards-section" id="solucoes">
+        <div class="section-title">
+            <h2>Nossas Soluções Agro</h2>
+            <p>Clique nos cards para ver detalhes da tecnologia</p>
+        </div>
+        <div class="cards-container">
+            <!-- Card 1 -->
+            <div class="card" data-tech="Monitoramento via satélite com IA para detectar pragas e estresse hídrico em tempo real.">
+                <div class="card-icon"><i class="fa-solid fa-satellite-dish"></i></div>
+                <h3>Lavoura Monitorada</h3>
+                <p>Gestão de precisão por satélite.</p>
+                <span class="card-action">Clique para Detalhes</span>
+            </div>
+            <!-- Card 2 -->
+            <div class="card" data-tech="Drones autônomos equipados com câmeras térmicas para aplicação exata de insumos.">
+                <div class="card-icon"><i class="fa-solid fa-drone"></i></div>
+                <h3>Pulverização Inteligente</h3>
+                <p>Uso eficiente de defensivos agrícolas.</p>
+                <span class="card-action">Clique para Detalhes</span>
+            </div>
+            <!-- Card 3 -->
+            <div class="card" data-tech="Análise profunda do solo que prevê a quantidade exata de nutrientes necessários para o plantio.">
+                <div class="card-icon"><i class="fa-solid fa-seedling"></i></div>
+                <h3>Nutrição de Precisão</h3>
+                <p>Análise de solo automatizada.</p>
+                <span class="card-action">Clique para Detalhes</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Interativo para Detalhes do Card -->
+    <div class="modal" id="techModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 id="modalTitle">Detalhes Técnicos</h3>
+            <p id="modalText"></p>
+        </div>
+    </div>
+
+    <!-- 3. PARTE DE CONTATOS -->
+    <section class="contact-section" id="contato">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Fale Conosco</h2>
+                <p>Tem dúvidas sobre como modernizar sua produção? Nossa equipe técnica está pronta para ajudar.</p>
+                <div class="info-item"><i class="fa-solid fa-phone"></i> (41) 99999-9999</div>
+                <div class="info-item"><i class="fa-solid fa-envelope"></i> contato@agrotech.com.br</div>
+            </div>
+            <div class="contact-form-box">
+                <form id="agroForm">
+                    <div class="input-group">
+                        <input type="text" id="nome" required placeholder="Seu Nome">
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email" required placeholder="Seu E-mail">
+                    </div>
+                    <div class="input-group">
+                        <textarea id="mensagem" required placeholder="Como podemos ajudar sua lavoura?"></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Enviar Mensagem</button>
+                </form>
+                <div id="formFeedback" class="form-feedback hidden"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. PARTE FINAL (FOOTER) -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 AgroTech. Cultivando inovação e sustentabilidade.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
